@@ -1,0 +1,118 @@
+.sayidbar {
+  position: sticky;
+  top: 81px;
+  left: 0;
+  height: calc(100vh - 81px);
+  background-color: #363740;
+  padding: 50px 0 32px 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  transition: all 0.5s ease;
+  gap: 53px;
+  overflow: hidden;
+  p {
+    transition: all 0.5s ease;
+  }
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    overflow: hidden;
+  }
+  &__item {
+    width: 100%;
+    &:last-child {
+      border-bottom: 1px solid #dfe0ebb5;
+    }
+    &:first-child {
+      background-color: #9fa2b412;
+      width: 100%;
+      border-left: 3px solid #dde2ff;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 20px 0;
+    width: 100%;
+    padding-left: 23px;
+    border-left: 3px solid transparent;
+    img {
+      width: 16px;
+      height: 16px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20.08px;
+      letter-spacing: 0.20000000298023224px;
+      color: #a4a6b3;
+    }
+  }
+  &__btns {
+    padding-left: 23px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 28px;
+    button {
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      width: 100%;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+      p {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.2px;
+        text-align: left;
+        color: #a4a6b3;
+        text-wrap: nowrap;
+      }
+    }
+  }
+  &__show {
+    width: 80px;
+    overflow: hidden;
+    p {
+      opacity: 0;
+    }
+  }
+}
+.admin {
+  display: grid;
+  grid-template-columns: 255px 1fr;
+  transition: all 0.5s ease;
+}
+.admin__show-menu {
+  display: grid;
+  grid-template-columns: 81px 1fr;
+}
+.side-bar__show-menu {
+  ul {
+    li {
+      a {
+        p {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  div {
+    button {
+      p {
+        opacity: 0;
+      }
+    }
+  }
+}

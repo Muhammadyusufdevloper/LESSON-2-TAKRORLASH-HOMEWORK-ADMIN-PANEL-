@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.min.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="navbar__logo" href="../index.html">
+        <img src="../assets/admin/Logo.svg" alt="admin logo" />
+        <p>Dashboard</p>
+      </a>
+      <div class="navbar__right">
+        <button class="navbar__menu">
+          <img src="../assets/admin/menu.svg" alt="Menu img" />
+        </button>
+        <div class="navbar__accout">
+          <p>Jones Ferdinand</p>
+          <img src="../assets/admin/photo.svg" alt="Jone img" />
+        </div>
+      </div>
+    </div>
+    <div class="admin">
+      <div class="sayidbar">
+        <ul class="sayidbar__list">
+          <li class="sayidbar__item">
+            <a class="sayidbar__link" href="#">
+              <img src="../assets/admin/product.svg" alt="Product img" />
+              <p>Products</p>
+            </a>
+          </li>
+          <li class="sayidbar__item">
+            <a class="sayidbar__link" href="#">
+              <img src="../assets/admin/users.svg" alt="user img" />
+              <p>Users</p>
+            </a>
+          </li>
+          <li class="sayidbar__item">
+            <a class="sayidbar__link" href="#">
+              <img src="../assets/admin/posts.svg" alt="posts Img" />
+              <p>Posts</p>
+            </a>
+          </li>
+          <li class="sayidbar__item">
+            <a class="sayidbar__link" href="#">
+              <img src="../assets/admin/contacts.svg" alt="Contacts Img" />
+              <p>Contacts</p>
+            </a>
+          </li>
+          <li class="sayidbar__item">
+            <a class="sayidbar__link" href="#">
+              <img src="../assets/admin/agents.svg" alt="Agents Img" />
+              <p>Agents</p>
+            </a>
+          </li>
+          <li class="sayidbar__item">
+            <a class="sayidbar__link" href="#">
+              <img src="../assets/admin/articels.svg" alt="Articles Img" />
+              <p>Articles</p>
+            </a>
+          </li>
+        </ul>
+        <div class="sayidbar__btns">
+          <button class="sayidbar__modal">
+            <img src="../assets/admin/mode.svg" alt="Modal img" />
+            <p>Change mode</p>
+          </button>
+          <button class="sayidbar__logout">
+            <img src="../assets/admin/logout.svg" alt="Logout img" />
+            <p>Logout</p>
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product__wrapper">
+          <div class="product__info">
+            <h1 class="product__title">Products</h1>
+            <div class="product__btns">
+              <button>
+                <img src="../assets/Vector.svg" alt="vector img" />
+              </button>
+              <button>Add</button>
+            </div>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Create date</th>
+                <th>
+                  <select class="product__category-select"></select>
+                </th>
+                <th>Price</th>
+                <th>Old Price</th>
+              </tr>
+            </thead>
+            <tbody class="product__tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>
